@@ -34,6 +34,18 @@ function displayCurrent(city,date,weathercode,temp,wind,humidity,uv){
 function removedisplay(){
     var current = document.getElementById("current");
     current.innerHTML='';
+    var forecaste = document.getElementById("forecastTitle");
+    forecaste.innerHTML='';
+    var casteone = document.getElementById("castone");
+    casteone.innerHTML ='';
+    var casttwo = document.getElementById("casttwo");
+    casttwo.innerHTML='';
+    var castthree = document.getElementById("castthree");
+    castthree.innerHTML='';
+    var castfour = document.getElementById("castfour");
+    castfour.innerHTML='';
+    var castfive = document.getElementById("castfive");
+    castfive.innerHTML='';
 }
 /**display forecast
  * date, icon, temp, wind, humidity
@@ -235,14 +247,6 @@ searchBtn.addEventListener("click", function(){
         //console.log("humidity: "+humidity);
         var uv = data['current']['uvi'] ;
         //console.log("uvi: "+uv);
-        /**unixcast time to fetch api for the forcast use */
-        var unixcastone = unixdate+86400;// seconds per day
-        var unixcasttwo = unixcastone+86400;
-        var unixcastthree = unixcasttwo+86400;
-        var unixcastfour = unixcastthree+86400;
-        var unixcastfive = unixcastfour+86400;
-
-        //console.log(datecastone);
         removedisplay();
         displayCurrent(city,date,weathercode,temp,wind,humidity,uv);
         displayforecast(lat,lon,unixdate);
