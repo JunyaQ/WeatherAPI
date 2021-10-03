@@ -11,10 +11,17 @@ h1{
     padding-top: 10px;
     padding-bottom: 10px;
 }
-h2{
+.searchTitle{
     color: black;
     font-size: 30px;
     font-weight: bolder;
+}
+
+h3{
+    color: black;
+    font-size: 25px;
+    font-weight: bolder;
+    display: inline;
 }
 button{
     text-align: center;
@@ -30,4 +37,53 @@ input{
     margin-top: 15px;
     width: 200px;
 
+}
+
+.container {
+    border: 3px solid #fff;
+    padding: 10px;
+    width: 1536px;
+    min-width: 500px;
+}
+.search-history-left{
+    position: absolute;
+    float: left;
+    width: 25%;
+    margin-right: 3px;
+}
+.forecastTitle-right{
+    margin-top: 10px;
+    color: black;
+    font-size: 30px;
+    font-weight: bolder;
+    float: right;
+
+}
+
+
+.current-right{
+    border:1px solid black;
+    background-color:lightyellow;
+    width:65%;
+    float: right;
+    margin-left: 20px;
+    margin-right: 150px;
+    padding-top: 30px;
+    padding-bottom: 30px;
+    line-height: 250%;
+    
+}
+
+.forecast-right{
+    margin-top: 10px;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+    grid-auto-flow: 1fr 1fr;
+    gap: 5px 50px;
+}
+footer{
+    text-align: center;
+    bottom: 10px;
+    position: absolute;
+    width: 100%;
 }

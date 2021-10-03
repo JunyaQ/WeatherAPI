@@ -10,16 +10,17 @@
 </head>
 <body>
     <h1>Weather Dashboard</h1>
-    <h3 id="test"></h3>
 
-    <div>
-        <h2>Search for a city:</h2>
+    <div class="container">
+    <div class="search-history-left">
+    <div class="search-left">
+        <h2 class="searchTitle">Search for a city:</h2>
         <input class="input" type="text" placeholder="San Diego Search..">
         <br/>
         <button class="searchBtn" type="submit">search</button>
     </div>
     <!--history, will appear here when searched one time-->
-    <div class="history" id="history">
+    <div class="history-left" id="history">
         <p id="Austin">Austin</p>
         <p id="Chicago">Chicago</p>
         <p id="NewYork">New York</p>
@@ -29,11 +30,12 @@
         <p id="Denver">Denver</p>
         <p id="Atlantaa">Atlanta</p>
     </div>
+    </div>
     <!--current searched one should be shown on the top of the page-->
     <div class="current" id="current">
         </div>
     <!--forecast of 5 days based on the searched city change-->
-    <div class="forecast" id="forecast">
+    <div class="forecast-rigth" id="forecast">
         <!--for the bottom part of five day forecast-->
         <div class="castone"></div>
         <div class="casttwo"></div>
@@ -41,11 +43,20 @@
         <div class="castfour"></div>
         <div class="castfive"></div>
         </div>
+        </div>
     
     <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
     <script type="text/javascript" src="./js/script.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.24.0/moment.min.js"></script>
     
 </body>
+<footer>
+    <section class="footer-section">
+         <p>
+             &copy; Junya Q &#10084
+         </p>
+     </section>
+ 
+ </footer>
 
 </html>
