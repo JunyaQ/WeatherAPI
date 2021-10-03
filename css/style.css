@@ -11,3 +11,23 @@ h1{
     padding-top: 10px;
     padding-bottom: 10px;
 }
+h2{
+    color: black;
+    font-size: 30px;
+    font-weight: bolder;
+}
+button{
+    text-align: center;
+    font-size: 15px;
+    margin-top: 15px;
+    color: whitesmoke;
+    background-color: lightskyblue;
+    border-radius: 3px;
+    border-color: lightskyblue;
+    width: 200px;
+}
+input{
+    margin-top: 15px;
+    width: 200px;
+
+}
