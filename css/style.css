@@ -17,11 +17,17 @@ h1{
     font-weight: bolder;
 }
 
-h3{
+.currentTitle{
+    margin-left: 10px;
     color: black;
     font-size: 25px;
     font-weight: bolder;
-    display: inline;
+    display: inline-block;
+    height: 50px;
+}
+img{
+    margin-bottom: -15px;
+    background-color: pink;
 }
 button{
     text-align: center;
@@ -59,7 +65,6 @@ input{
     float: right;
 
 }
-
 
 .current-right{
     border:1px solid black;
