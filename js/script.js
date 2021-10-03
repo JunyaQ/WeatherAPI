@@ -38,7 +38,7 @@ function removedisplay(){
 /**display forecast
  * date, icon, temp, wind, humidity
 */
-function displayforecastone(lat,lon,unixdate){
+function displayforecast(lat,lon,unixdate){
     //https://api.openweathermap.org/data/2.5/onecall/timemachine?lat={lat}&lon={lon}&dt={time}&appid={API key}
     fetch('https://api.openweathermap.org/data/2.5/onecall?lat='+lat+'&lon='+lon+'&dt='+unixdate+'&appid=c7a06032b7a947e2ad991c8e63f709c1')
         .then(response => response.json())
@@ -169,7 +169,6 @@ function displayforecastone(lat,lon,unixdate){
         castfour.appendChild(h4);
 
 
-
         //cast5:
         var castfive = document.getElementById("castfive");
         castfive.setAttribute("class","castfive");
@@ -246,7 +245,7 @@ searchBtn.addEventListener("click", function(){
         //console.log(datecastone);
         removedisplay();
         displayCurrent(city,date,weathercode,temp,wind,humidity,uv);
-        displayforecastone(lat,lon,unixdate);
+        displayforecast(lat,lon,unixdate);
       
         })
 
