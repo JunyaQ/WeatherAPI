@@ -29,6 +29,22 @@ function displayCurrent(city,date,weathercode,temp,wind,humidity,uv){
     current.appendChild(h);
     var u = document.createElement('p');
     u.innerHTML = "UV Index: "+uv;
+    if(uv<3){
+        u.setAttribute("style", "background-color:green");
+    }
+    else if(uv>=3&&uv<5){
+        u.setAttribute("style", "background-color:yellow");
+    }
+    else if(uv>=5&&uv<7){
+        u.setAttribute("style", "background-color:orange");
+    }
+    else if(uv>=7&&uv<10){
+        u.setAttribute("style", "background-color:red");
+
+    }
+    else if(uv>=10){
+        u.setAttribute("style", "background-color:violet")
+    }
     current.appendChild(u);
 }
 /**clear the screen before each search */
@@ -322,6 +338,7 @@ searchBtn.addEventListener("click", function(){
         var humidity = data['current']['humidity'];
         //console.log("humidity: "+humidity);
         var uv = data['current']['uvi'] ;
+      
         //console.log("uvi: "+uv);
         removedisplay();
         displayCurrent(city,date,weathercode,temp,wind,humidity,uv);

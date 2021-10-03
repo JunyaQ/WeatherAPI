@@ -68,7 +68,7 @@ input{
 .current-right{
     display: block;
     border:1px solid black;
-    background-color:lightyellow;
+    background-color:bisque;
     width:55%;
     float: right;
     margin-right: 420px;
