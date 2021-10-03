@@ -13,12 +13,12 @@
     <h3 id="test"></h3>
 
     <div>
-        <h1>Search for a city:</h1>
+        <h2>Search for a city:</h2>
         <input class="input" type="text" placeholder="San Diego Search..">
         <button class="searchBtn" type="submit">search</button>
     </div>
-
-    <div>
+    <!--history, will appear here when searched one time-->
+    <div class="history" id="history">
         <p id="Austin">Austin</p>
         <p id="Chicago">Chicago</p>
         <p id="NewYork">New York</p>
@@ -28,6 +28,18 @@
         <p id="Denver">Denver</p>
         <p id="Atlantaa">Atlanta</p>
     </div>
+    <!--current searched one should be shown on the top of the page-->
+    <div class="current" id="current">
+        </div>
+    <!--forecast of 5 days based on the searched city change-->
+    <div class="forecast" id="forecast">
+        <!--for the bottom part of five day forecast-->
+        <div class="castone"></div>
+        <div class="casttwo"></div>
+        <div class="castthree"></div>
+        <div class="castfour"></div>
+        <div class="castfive"></div>
+        </div>
     
     <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
     <script type="text/javascript" src="./js/script.js"></script>

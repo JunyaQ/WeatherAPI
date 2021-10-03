@@ -16,18 +16,20 @@ searchBtn.addEventListener("click", function(){
         fetch('https://api.openweathermap.org/data/2.5/onecall?lat='+lat+'&lon='+lon+'&exclude=daily&appid=c7a06032b7a947e2ad991c8e63f709c1')
         .then(response => response.json())
         .then(data => {
-            console.log(data);
-                 
-        var date ;
+            console.log(data);      
+        var unixdate = data['current']['dt'] ;
+        var date = new Date(unixdate*1000).toDateString();
         console.log("date: "+date);
-        var temp ;
+        var temp = data['current']['temp'];
         console.log("temp: "+temp);
         var wind ;
         console.log("wind: "+wind);
-        var humidity ;
+        var humidity = data['current']['humidity'];
         console.log("humidity: "+humidity);
-        var uv;
+        var uv = data['current']['uvi'] ;
+        console.log("uvi: "+uv);
         })
+        
     })
    
     .catch(error => "name error")
