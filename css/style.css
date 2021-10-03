@@ -28,6 +28,12 @@ h1{
 img{
     margin-bottom: -15px;
     background-color: pink;
+    margin-left: 10px;
+    color: black;
+    font-size: 25px;
+    font-weight: bolder;
+    display: inline-block;
+    height: 50px;
 }
 button{
     text-align: center;
@@ -44,48 +50,131 @@ input{
     width: 200px;
 
 }
-
+/*container for everything except header "weather board"&& footer*/
 .container {
     border: 3px solid #fff;
     padding: 10px;
     width: 1536px;
     min-width: 500px;
+    overflow-wrap: break-word;
 }
+/*for history bar what have searched before*/
 .search-history-left{
     position: absolute;
     float: left;
     width: 25%;
     margin-right: 3px;
 }
-.forecastTitle-right{
-    margin-top: 10px;
-    color: black;
-    font-size: 30px;
-    font-weight: bolder;
-    float: right;
-
-}
-
+/*current weather on the top line*/
 .current-right{
+    display: block;
     border:1px solid black;
     background-color:lightyellow;
-    width:65%;
+    width:55%;
     float: right;
-    margin-left: 20px;
-    margin-right: 150px;
+    margin-right: 420px;
     padding-top: 30px;
     padding-bottom: 30px;
     line-height: 250%;
     
 }
-
+/*for five display inline */
 .forecast-right{
+    width: 100%;
+    float: right;
+    line-height: 250%;
+    left: 200px;
     margin-top: 10px;
     display: grid;
     grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
-    grid-auto-flow: 1fr 1fr;
-    gap: 5px 50px;
+    grid-auto-flow: column;
 }
+/*5 day cast css*/
+.forecastTitle{
+    color: black;
+    font-size: 25px;
+    font-weight: bolder;
+    margin-top: 10px;
+    float: right;
+    text-align: center;
+    width: 100%;
+    margin-left: 200px;
+    margin-bottom: 60px;
+    display: block;
+
+}
+/*day one css*/
+.castone{
+    height: 200px;
+    width: 150px;
+    float: right;
+    padding-left: 10px;
+    padding-right: 10px;
+    padding-bottom: 20px;
+    border:1px solid black;
+    background-color: rgba(2, 45, 73, 0.877);
+    color: whitesmoke;
+    margin-left: -50px;
+    margin-top: 60px;
+}
+/*day two css*/
+.casttwo{
+    height: 200px;
+    width: 150px;
+    float: right;
+    padding-left: 10px;
+    padding-right: 10px;
+    padding-bottom: 20px;
+    border:1px solid black;
+    background-color: rgba(2, 45, 73, 0.877);
+    color: whitesmoke;
+    margin-left: -150px;
+    margin-top: 60px;
+}
+/*day three css*/
+.castthree{
+    height: 200px;
+    width: 150px;
+    float: right;
+    padding-left: 10px;
+    padding-right: 10px;
+    padding-bottom: 20px;
+    border:1px solid black;
+    background-color: rgba(2, 45, 73, 0.877);
+    color: whitesmoke;
+    margin-left: -250px;
+    margin-top: 60px;
+}
+/*day four css*/
+.castfour{
+    height: 200px;
+    width: 150px;
+    float: right;
+    padding-left: 10px;
+    padding-right: 10px;
+    padding-bottom: 20px;
+    border:1px solid black;
+    background-color: rgba(2, 45, 73, 0.877);
+    color: whitesmoke;
+    margin-left: -350px;
+    margin-top: 60px;
+}
+
+/*day five css*/
+.castfive{
+    height: 200px;
+    width: 150px;
+    float: right;
+    padding-left: 10px;
+    padding-right: 10px;
+    padding-bottom: 20px;
+    border:1px solid black;
+    background-color: rgba(2, 45, 73, 0.877);
+    color: whitesmoke;
+    margin-left: -450px;
+    margin-top: 60px;
+}
+
 footer{
     text-align: center;
     bottom: 10px;
