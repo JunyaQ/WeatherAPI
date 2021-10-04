@@ -28,24 +28,31 @@ function displayCurrent(city,date,weathercode,temp,wind,humidity,uv){
     h.innerHTML = "Humidty: "+humidity+"%";
     current.appendChild(h);
     var u = document.createElement('p');
-    u.innerHTML = "UV Index: "+uv;
+    u.innerHTML = "UV Index: ";
+    var spu = document.createElement('span');
+    spu.innerHTML = uv;
+    current.appendChild(u);
+    u.appendChild(spu);
+    spu.setAttribute("style","display:inline");
     if(uv<3){
-        u.setAttribute("style", "background-color:green");
+        spu.setAttribute("style", "background-color:green; border:5px solid green;color: white;border-radius: 3px; paddding-right:3px; padding-left:3px;");
+        
+
     }
     else if(uv>=3&&uv<5){
-        u.setAttribute("style", "background-color:yellow");
+        spu.setAttribute("style", "background-color:yellow");
     }
     else if(uv>=5&&uv<7){
-        u.setAttribute("style", "background-color:orange");
+        spu.setAttribute("style", "background-color:orange");
     }
     else if(uv>=7&&uv<10){
-        u.setAttribute("style", "background-color:red");
+        spu.setAttribute("style", "background-color:red");
 
     }
     else if(uv>=10){
-        u.setAttribute("style", "background-color:violet")
+        spu.setAttribute("style", "background-color:violet");
     }
-    current.appendChild(u);
+    
 }
 /**clear the screen before each search */
 function removedisplay(){

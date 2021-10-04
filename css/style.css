@@ -68,6 +68,7 @@ input{
 .current-right{
     display: block;
     border:1px solid black;
+    /*change the background color to make the image of cloud showing better*/
     background-color:bisque;
     width:55%;
     float: right;
