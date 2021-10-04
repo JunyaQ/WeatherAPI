@@ -35,3 +35,5 @@ The main page <br/>
 <img src="img/webMain.jpg"><br/>
 Result page after search <br/>
 <img src= "img/result.jpg"><br/>
+
+Deployed URL: https://junyaq.github.io/bootcamp-challenge-06/
