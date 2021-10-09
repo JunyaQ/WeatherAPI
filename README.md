@@ -9,7 +9,7 @@ THEN showing the current weather at the top large box<br/>
 AND five days forecastes under the large box<br/>
 
 FOR the current weather box<br/>
-SHOWING city name (same as searching),date, icom represents the weather, temperature in F, wind speed in MPH, humidity and UV index<br.>
+SHOWING city name (same as searching),date, icon represents the weather, temperature in F, wind speed in MPH, humidity and UV index<br.>
 
 WHEN viewing the UV index, it has its own background color<br/>
 WHEN UV index <3, showing green,<br/>
