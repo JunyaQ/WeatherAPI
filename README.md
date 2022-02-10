@@ -1,4 +1,4 @@
-# bootcamp-challenge-06-weatherAPI
+# WeatherAPI
 This is a website connected with a service side API, and will give dynamic result based on the API<br/>
 WHEN open the webpage<br/>
 THEN showing a list of previous searched result (won't show anything if never use the browser to do any search before)<br/>
